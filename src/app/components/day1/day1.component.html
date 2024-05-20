@@ -1,0 +1,14 @@
+<h4>Enter text to log on console : </h4>
+<input [(ngModel)]="inputText1" placeholder="Enter text here">
+<button (click)="logInput()">Log Input</button><br><br>
+
+<h4>Enter text to display onclick : </h4>
+<input type="text" [(ngModel)]="inputText2" placeholder="Enter text here">
+<button (click)="displayText()">Display Text</button><br>
+<p *ngIf="displayedText">{{ displayedText }}</p>
+<br><br>
+
+<h4>Enter text to see simultaniously :</h4>
+<input id="inputField" type="text" [(ngModel)]="inputText3" />
+<h4>You entered: {{ inputText3 }}</h4>
+
