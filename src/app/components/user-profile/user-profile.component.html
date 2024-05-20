@@ -1,0 +1,31 @@
+<h1>{{componentName}}</h1>
+
+<p>user-profile works!</p>
+<!-- // Data Binding -->
+<button [disabled]="isDisabled">click me</button>
+<!-- // Event Binding -->
+<input type="text" [value]="data" (input)="myFun($event)">
+
+<!-- // two-way data-binding -->
+<h1>The Input is : {{name}}</h1>
+<input type="text" [(ngModel)]="name">
+
+<div> 
+    @for (user of users; track user.name) {
+        @if (user.age > 18) {
+            <h4>Name : {{user.name}} | age : {{user.age}} | city : {{user.city}} is major</h4>
+        }
+        @else {
+            <h4>Name : {{user.name}} | age : {{user.age}} | city : {{user.city}} is minor</h4>
+        }
+
+    }
+</div>
+<hr />
+
+<div *ngFor="let user of users">
+        <h4>Name : {{user.name}} | age : {{user.age}} | city : {{user.city}}</h4>
+</div>
+
+
+<button (click)="sendData()">Send to parent</button>
