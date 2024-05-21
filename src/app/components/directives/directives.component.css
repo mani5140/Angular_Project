@@ -1,0 +1,22 @@
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#product {
+    width: 30%; /* Adjust according to your margin */
+    margin: 10px; /* Adjust according to your preference */
+}
+
+#product_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#left{
+    width: 55%;
+} 
+#right{
+    width: 35%;
+}

@@ -11,15 +11,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class Day1Component {
   inputText1: string = '';
+  inputText2: string = '';
+  displayedText: string = '';
+  inputText3 : string = "";
+
   logInput() {
     console.log(this.inputText1);
   }
 
-  inputText2: string = '';
-  displayedText: string = '';
   displayText() {
     this.displayedText = this.inputText2;
   }
 
-  inputText3 : string = "";
 }
